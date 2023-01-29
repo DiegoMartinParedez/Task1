@@ -5,14 +5,29 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+body{
+    background-color: #FFFBAC;
+}
 header{
+    width: 100%;
     margin-bottom: 2px;
     border: 2px solid #ccc;
-    background-color: #aabf5e;
+    background-color: #D7E9B9;
     border-radius: 2px;
+}
+
+img{
+    border: 2px solid #ccc;
+    display: inline-block;
+}
+
+h1{
+    border: 2px solid #ccc;
+    display: inline-block;
+
 }
 
 main{
     margin-top: 2px;
+    background-color: #FFD495;
 }
