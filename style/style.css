@@ -42,26 +42,31 @@ h3{
 }
 
 p{
+  margin-top: .5rem;
   font-size: 2rem;
+  text-indent: 3rem;
+}
+
+main {
+  margin-top: 2px;
+  position: relative;
 }
 
 nav {
-  border:4px solid white;
-  height: 50px;
-  background-color: black;
-  padding: 10px;
-  display: inline;
+  display: inline-block;
+  
 }
 
 nav a {
-  height: 30px;
-  width: 250px;
-  color: white;
-  text-decoration: none;
+  height:10vh;
+  width: 20vw;
+  margin: 3rem;
+  color: rgb(178, 205, 178);
+  font-size: 1.5rem;
   border: 2px solid #ccc;
   display: block;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 2rem;
   border-radius: 20px;
 }
 
@@ -69,17 +74,23 @@ a:hover {
   background-color: #d7e9b9;
   color: black;
   border-color: #ffd495;
+  text-decoration: none;
 }
 
 .active {
   background-color: #d7e9b9;
   color: black;
   border-color: #ffd495;
+  text-decoration: none;
 }
 
-main {
-  margin-top: 2px;
-  background-color: #ffd495;
+section{
+width: 60vw;
+display: inline-block;
+}
+
+article{
+  margin-top: .5rem;
 }
 
 aside{
@@ -88,9 +99,11 @@ aside{
 }
 
 .logo{
-    height: 200px;
-    width: 200px;
+    width: 15rem;
+    height: 15rem;
     border: 1px solid black;
+    background-color: white;
     position:absolute;
-    right: 200px;
+    right: 15rem;
+    top: -4rem ; /*ver esto, se podria usar display*/
 }
