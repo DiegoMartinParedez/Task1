@@ -20,19 +20,37 @@ header {
   background-size: cover;
   background-position-y: 20%;
   display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
-div{
-  background-color: black;
-  position: absolute;
-} 
+.name{
+  margin-bottom: 15rem;
+}
 
+.title{
+  padding: 1rem;
+  position: relative;
+  background-color:black;
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  right: 15rem;
+  top: -4rem;
+}
 
 h1 {
   font-size: 6rem;
   font-family: 'Courier New', Courier, monospace;
   color: #c27a0e;
-  display: inline-block;
 }
 
 h2{
@@ -54,13 +72,15 @@ p{
 }
 
 main {
-  margin-top: 2px;
-  position: relative;
+  width: 70vw;
+  border:3px solid black;
+  display: inline;
 }
 
-nav {
-  display: inline-block;
-  
+nav{
+  width: 25vw;
+  border: 3px solid black;
+  display: inline;
 }
 
 nav a {
@@ -92,21 +112,10 @@ a:hover {
 
 section{
 width: 60vw;
-display: inline-block;
 }
 
 article{
   margin-top: .5rem;
-}
-
-.logo{
-    width: 15rem;
-    height: 15rem;
-    border: 1px solid black;
-    background-color: white;
-    position:absolute;
-    right: 15rem;
-    top: -4rem ; /*ver esto, se podria usar display*/
 }
 
 table, th,td{
