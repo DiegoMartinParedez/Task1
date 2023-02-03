@@ -1,4 +1,4 @@
-/*normalización*/
+/*=========================Normalización=================================*/
 * {
   padding: 0%;
   margin: 0%;
@@ -6,49 +6,9 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
+/*============================Body====================================*/
 body {
   background-color: #fffbac;
-}
-
-header {
-  min-height: 35vh;
-  min-width: 100vh;
-  margin-bottom: 2px;
-  background-image: url(../img/design1_image1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-
-.container{
-  display: flex;
-}
-
-.name{
-  margin-bottom: 15rem;
-}
-
-.title{
-  padding: 1rem;
-  position: relative;
-  background-color:black;
-  display:flex;
-  justify-content:center;
-  flex-wrap: wrap;
-}
-
-.logo{
-  width: 15rem;
-  height: 15rem;
-  border: 1px solid black;
-  background-color: white;
-  position: absolute;
-  right: 15rem;
-  top: -4rem;
 }
 
 h1 {
@@ -74,12 +34,70 @@ p{
   font-size: 2rem;
   text-indent: 3rem;
 }
-
-main {
-  display: inline-block;
+/*============================Header====================================*/
+header {
+  min-height: 35vh;
+  min-width: 100vh;
+  margin-bottom: 2px;
+  background-image: url(../img/design1_image1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }
 
+.name{
+  margin-bottom: 15rem;
+}
+
+.title{
+  padding: 1rem;
+  position: relative;
+  background-color:black;
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid black;
+  background-color: white;
+  position: absolute;
+  right: 15rem;
+  top: -4rem;
+}
+/*============================Container=nav+main====================================*/
+.container{
+  min-height: 64vh;
+  border: 3px solid red;
+  display: flex;
+  gap: 1.5rem;
+}
+
+main {
+  border: 5px solid green;
+  width: 75%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+section{
+  border: 3px solid black;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 nav{
+  min-height: 100%;
+  width: 25%;
+  border: 3px solid black;
   display: inline-block;
 }
 
@@ -108,17 +126,27 @@ a:hover {
   border-color: #ffd495;
   text-decoration: none;
 }
-
-
-article{
-  margin-top: .5rem;
-}
-
+/*============================Tablas & listas====================================*/
 table, th,td{
   padding:1rem;
   text-align: left;
+  font-size: 1.5rem;
 }
 
 .date{ 
-  text-align: center;
+    text-align: center;
+}
+
+dl, dd{
+  padding: .5rem;
+}
+
+ol{
+  padding: 1rem;
+  font-size: 2rem;
+  list-style-position: inside;
+}
+
+li ol{
+  list-style-type: lower-alpha; 
 }
