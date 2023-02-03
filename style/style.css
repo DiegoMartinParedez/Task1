@@ -107,3 +107,12 @@ aside{
     right: 15rem;
     top: -4rem ; /*ver esto, se podria usar display*/
 }
+
+table, th,td{
+  background-color: #2bd3a3db;
+  border:1px solid black;
+  border-collapse: collapse;
+  padding:1rem;
+  text-align:center;
+  ;
+}
