@@ -24,6 +24,10 @@ header {
   justify-content: end;
 }
 
+.container{
+  display: flex;
+}
+
 .name{
   margin-bottom: 15rem;
 }
@@ -72,19 +76,14 @@ p{
 }
 
 main {
-  width: 70vw;
-  border:3px solid black;
-  display: inline;
+  display: inline-block;
 }
 
 nav{
-  width: 25vw;
-  border: 3px solid black;
-  display: inline;
+  display: inline-block;
 }
 
 nav a {
-  height:10vh;
   width: 20vw;
   margin: 3rem;
   color: rgb(178, 205, 178);
@@ -92,7 +91,7 @@ nav a {
   border: 2px solid #ccc;
   display: block;
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem;
   border-radius: 20px;
 }
 
@@ -110,9 +109,6 @@ a:hover {
   text-decoration: none;
 }
 
-section{
-width: 60vw;
-}
 
 article{
   margin-top: .5rem;
