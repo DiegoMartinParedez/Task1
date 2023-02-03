@@ -19,8 +19,14 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 20%;
-  position: relative;
+  display: flex;
 }
+
+div{
+  background-color: black;
+  position: absolute;
+} 
+
 
 h1 {
   font-size: 6rem;
@@ -93,11 +99,6 @@ article{
   margin-top: .5rem;
 }
 
-aside{
-    background-color: black;
-    position: relative;
-} 
-
 .logo{
     width: 15rem;
     height: 15rem;
@@ -109,10 +110,10 @@ aside{
 }
 
 table, th,td{
-  background-color: #2bd3a3db;
-  border:1px solid black;
-  border-collapse: collapse;
   padding:1rem;
-  text-align:center;
-  ;
+  text-align: left;
+}
+
+.date{ 
+  text-align: center;
 }
