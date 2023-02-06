@@ -36,9 +36,8 @@ p{
 }
 /*============================Header====================================*/
 header {
-  min-height: 35vh;
+  max-height: 35vh;
   min-width: 100vh;
-  margin-bottom: 2px;
   background-image: url(../img/design1_image1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,6 +55,7 @@ header {
   padding: 1rem;
   position: relative;
   background-color:black;
+  opacity: 70%;
   display:flex;
   justify-content:center;
   flex-wrap: wrap;
@@ -64,8 +64,6 @@ header {
 .logo{
   width: 15rem;
   height: 15rem;
-  border: 1px solid black;
-  background-color: white;
   position: absolute;
   right: 15rem;
   top: -4rem;
@@ -73,21 +71,19 @@ header {
 /*============================Container=nav+main====================================*/
 .container{
   min-height: 64vh;
-  border: 3px solid red;
   display: flex;
   gap: 1.5rem;
 }
 
 main {
-  border: 5px solid green;
   width: 75%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  z-index: 1;
 }
 
 section{
-  border: 3px solid black;
   height: 100%;
   padding: 1rem;
   display: flex;
@@ -97,13 +93,12 @@ section{
 nav{
   min-height: 100%;
   width: 25%;
-  border: 3px solid black;
   display: inline-block;
 }
 
 nav a {
   width: 20vw;
-  margin: 3rem;
+  margin: 1rem;
   color: rgb(178, 205, 178);
   font-size: 1.5rem;
   border: 2px solid #ccc;
