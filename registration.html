@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration Form</title>
-    <link rel="shorcut icon" href="img/design1_image1.jpg">
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shorcut icon" href="img/design1_image1.jpg" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
@@ -15,7 +15,7 @@
       </div>
       <div class="title">
         <h2>Registration Form</h2>
-        <img class="logo" src="img/LogoMightyDucks.png" alt="logo">
+        <img class="logo" src="img/LogoMightyDucks.png" alt="logo" />
       </div>
     </header>
     <div class="container">
@@ -32,122 +32,181 @@
         </ul>
       </nav>
       <main>
-        <form action="#" method="get">
+        <form action="./show_data.html" method="get">
           <fieldset>
             <label for="first_name">Player's First Name</label>
-            <input type="text" name="first_name" id="first_name">
+            <input type="text" name="first_name" id="first_name" />
             <label for="last_name">Last Name</label>
-            <input type="text" name="last_name" id="last_name">
+            <input type="text" name="last_name" id="last_name" />
           </fieldset>
           <fieldset>
             <label for="street_address">Street Address</label>
-            <input type="text" name="street_address" id="street_address">
+            <input type="text" name="street_address" id="street_address" />
           </fieldset>
           <fieldset>
             <label for="city">City</label>
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" />
             <label for="zip_code">Zip Code</label>
-            <input type="number" name="zip_code" id="zip_code">
+            <input type="number" name="zip_code" id="zip_code" />
           </fieldset>
           <fieldset>
             <label for="birth_date">Birth Date</label>
-            <input type="date" name="birth_date" id="birth_date">
-            <h4>Gender</h4>
+            <input type="date" name="birth_date" id="birth_date" />
+            <label for="">Gender:</label>
             <label for="female">Female</label>
-            <input type="checkbox" name="female" id="female">
+            <input type="radio" name="gender" id="female" value="female" />
             <label for="male">Male</label>
-            <input type="checkbox" name="male" id="male">
+            <input type="radio" name="gender" id="male" value="male" />
           </fieldset>
           <fieldset>
-            <legend>Grade</legend>
+            <label>Grade:</label>
+            <input
+              type="radio"
+              name="grade"
+              id="pre_school"
+              value="pre_school"
+            />
             <label for="pre_school">Pre-School</label>
-            <input type="checkbox" name="pre_school" id="pre_school">
+            <input type="radio" name="grade" id="1st" value="1st" />
             <label for="1st">1st</label>
-            <input type="checkbox" name="1st" id="1st">
+            <input type="radio" name="grade" id="2nd" value="2nd" />
             <label for="2nd">2nd</label>
-            <input type="checkbox" name="2nd" id="2nd">
+            <input type="radio" name="grade" id="3rd" value="3rd" />
             <label for="3rd">3rd</label>
-            <input type="checkbox" name="3rd" id="3rd">
+            <input type="radio" name="grade" id="4th" value="4th" />
             <label for="4th">4th</label>
-            <input type="checkbox" name="4th" id="4th">
+            <input type="radio" name="grade" id="5th" value="5th" />
             <label for="5th">5th</label>
-            <input type="checkbox" name="5th" id="5th">
           </fieldset>
           <fieldset>
-            <h4>Which elementary school do you live near?</h4>
-            <h5>Closest School</h5>
-            <label for="aj_kats">Aj Katsenmaier</label>
-            <input type="checkbox" name="aj_kats" id="aj_kats">
-            <label for="greenbay">Greenbay</label>
-            <input type="checkbox" name="greenbay" id="greenbay">
-            <label for="h_a_yeager">Howard A Yeager</label>
-            <input type="checkbox" name="h_a_yeager" id="h_a_yeager">
-            <label for="m_p_hart">Marjorie P Hart</label>
-            <input type="checkbox" name="m_p_hart" id="m_p_hart">
-            <label for="n_elementary">North Elementary</label>
-            <input type="checkbox" name="n_elementary" id="n_elementary">
-            <label for="s_elementary">South Elementary</label>
-            <input type="checkbox" name="s_elementary" id="s_elementary">
+            <legend>Which elementary school do you live near?</legend>
+            <legend>Closest School</legend>
+              <label for="aj_kats">Aj Katsenmaier</label>
+              <input
+                type="radio"
+                name="close_sc"
+                id="aj_kats"
+                value="Aj Katsenmaier"
+              />
+              <label for="greenbay">Greenbay</label>
+              <input
+                type="radio"
+                name="close_sc"
+                id="greenbay"
+                value="Greenbay"
+              />
+              <label for="h_a_yeager">Howard A Yeager</label>
+              <input
+                type="radio"
+                name="close_sc"
+                id="h_a_yeager"
+                value="Howard A Yeager"
+              />
+              <label for="m_p_hart">Marjorie P Hart</label>
+              <input
+                type="radio"
+                name="close_sc"
+                id="m_p_hart"
+                value="Marjorie P Hart"
+              />
+              <label for="n_elementary">North Elementary</label>
+              <input
+                type="radio"
+                name="close_sc"
+                id="n_elementary"
+                value="North Elementary"
+              />
+              <label for="s_elementary">South Elementary</label>
+              <input
+                type="radio"
+                name="close_sc"
+                id="s_elementary"
+                value="South Elementary"
+              />
           </fieldset>
           <fieldset>
             <legend>
               What position(s) do you normally play? (check all that apply)
             </legend>
             <label for="forward">Forward</label>
-            <input type="checkbox" name="forward" id="forward">
+            <input
+              type="checkbox"
+              name="forward"
+              id="forward"
+              value="forward"
+            />
             <label for="Defense">Defense</label>
-            <input type="checkbox" name="Defense" id="Defense">
+            <input
+              type="checkbox"
+              name="Defense"
+              id="Defense"
+              value="defense"
+            />
             <label for="Midfield">Midfield</label>
-            <input type="checkbox" name="Midfield" id="Midfield">
+            <input
+              type="checkbox"
+              name="Midfield"
+              id="Midfield"
+              value="midfield"
+            />
             <label for="Goalkeeper">Goalkeeper</label>
-            <input type="checkbox" name="Goalkeeper" id="Goalkeeper">
+            <input
+              type="checkbox"
+              name="Goalkeeper"
+              id="Goalkeeper"
+              value="goalkeeper"
+            />
           </fieldset>
           <fieldset>
             <legend>Uniform Size:</legend>
             <label for="y_s">Youth Small</label>
-            <input type="checkbox" name="y_s" id="y_s">
+            <input type="radio" name="u_size" id="y_s" value="small" />
             <label for="y_m">Youth Medium</label>
-            <input type="checkbox" name="y_m" id="y_m">
+            <input type="radio" name="u_size" id="y_m" value="youth medium" />
             <label for="y-l">Youth larger</label>
-            <input type="checkbox" name="y-l" id="y-l">
+            <input type="radio" name="u_size" id="y-l" value="youth large" />
             <label for="s">Small</label>
-            <input type="checkbox" name="s" id="s">
+            <input
+              type="radio"
+              name="u_size"
+              id="s"
+              value="s
+            "
+            />
             <label for="m">Medium</label>
-            <input type="checkbox" name="m" id="m">
+            <input type="radio" name="u_size" id="m" value="medium" />
             <label for="l">Large</label>
-            <input type="checkbox" name="l" id="l">
+            <input type="radio" name="u_size" id="l" value="large" />
             <label for="x_l">Extra Large</label>
-            <input type="checkbox" name="x_l" id="x_l">
+            <input type="radio" name="u_size" id="x_l" value="extra large" />
           </fieldset>
-        </form>
-        <section>
-          <h3>Permission to Play</h3>
-          <p>
-            I, the parent or guardian of the minor registrant, agree that the
-            registrant and I will abide by all the rules of the Mighty Ducks
-            Hockey League (MDHL). In recognizing the possibility of physical
-            injury associated with hockey and in consideration for the "League"
-            accepting the registrant for its hockey programs and activities, I
-            hereby release, discharge, and/or otherwise indemnify MDHL, their
-            employed and associated personnel and volunteers, including the the
-            facilities used for the registrant's participation in the
-            programand/orbeing transported to or from MDHL sponsored activities,
-            which transportation.
-          </p>
-          <p>
-            By signing below, I here by agree and autorize the above. In
-            addition, by signing below, I also a knowledge that I have read the
-            cancellation policy and agree to its items.
-          </p>
-        </section>
-        <form action="#">
-          <fieldset>
-            <label for="sign">Parent/Guardian Signature</label
-            ><input type="text" name="sign" id="sign">
-          </fieldset>
+          <section>
+            <h3>Permission to Play</h3>
+            <p>
+              I, the parent or guardian of the minor registrant, agree that the
+              registrant and I will abide by all the rules of the Mighty Ducks
+              Hockey League (MDHL). In recognizing the possibility of physical
+              injury associated with hockey and in consideration for the
+              "League" accepting the registrant for its hockey programs and
+              activities, I hereby release, discharge, and/or otherwise
+              indemnify MDHL, their employed and associated personnel and
+              volunteers, including the the facilities used for the registrant's
+              participation in the programand/orbeing transported to or from
+              MDHL sponsored activities, which transportation.
+            </p>
+            <p>
+              By signing below, I here by agree and autorize the above. In
+              addition, by signing below, I also a knowledge that I have read
+              the cancellation policy and agree to its items.
+            </p>
+          </section>
           <fieldset>
             <label for="date">Date</label>
-            <input type="date" name="date" id="date">
+            <input type="date" name="date" id="date" />
+          </fieldset>
+          <fieldset>
+            <label for="sign">Parent/Guardian Signature</label>
+            <input type="submit" name="sign" id="sign" value="Enviar datos" />
           </fieldset>
         </form>
       </main>
