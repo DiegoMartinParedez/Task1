@@ -55,7 +55,7 @@ header {
   padding: 1rem;
   position: relative;
   background-color: black;
-  opacity: 70%;
+  opacity: 80%;
   display: flex;
   justify-content: center;
   flex-wrap:wrap-reverse;
@@ -67,6 +67,7 @@ header {
   position: absolute;
   right: 15rem;
   top: -4rem;
+  z-index: 1;
 }
 /*============================Container=nav+main====================================*/
 .container {
@@ -81,7 +82,6 @@ main {
   padding-right: .5rem;
   display: flex;
   flex-direction: column;
-  z-index: 1;
 }
 
 section {
@@ -165,7 +165,8 @@ form{
   opacity: 90%;
   font-size: 3rem;
   color: white;
-  padding: 1rem;
+  margin-top: 1rem;
+  padding: .5rem;
   display: flex;
   flex-direction: column;
 }
@@ -173,24 +174,25 @@ form{
 fieldset{
   width: 100%;
   border: none;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 input{
-font-size: 2rem;
-padding: 1rem;
-margin-top: 1rem;
+padding: .5rem;
+margin-top: .5rem;
 background: none;
 border: none;
 border-bottom: 1px solid black;
+font-size: 2rem;
+text-align: center;
 }
 
 label{
 font-size: 2rem;
-padding-top: 1rem;
+padding-top: .5rem;
 margin: 1rem 1rem 0 1rem;
 }
 
